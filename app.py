@@ -3,7 +3,7 @@ import streamlit as st
 # Configurações da página
 st.set_page_config(page_title="DGCE Manutenção Industrial", layout="wide")
 
-# Título com símbolo de raio à esquerda
+# Título com símbolo de raio ⚡ à esquerda
 st.markdown("<h2 style='text-align: left; color: white;'>⚡ DGCE - Manutenção Industrial</h2>", unsafe_allow_html=True)
 
 # CSS customizado para fundo preto e botões cinza mais próximos
@@ -14,9 +14,9 @@ st.markdown("""
     }
     .app-button {
         display: inline-block;
-        width: 240px;
+        width: 220px;
         padding: 12px;
-        margin: 5px;
+        margin: 5px; /* espaçamento reduzido */
         font-size: 15px;
         font-weight: bold;
         text-align: center;
@@ -36,8 +36,8 @@ st.markdown("""
 
 st.write("Selecione abaixo o aplicativo que deseja acessar:")
 
-# Layout em duas colunas mais próximas
-col1, col2 = st.columns([1,1])
+# Layout em duas colunas mais próximas (proporção ajustada)
+col1, col2 = st.columns([1,1], gap="small")
 
 with col1:
     st.markdown('<a class="app-button" href="https://c-lculobancocapacitores-tne9epqsrh64gtwaakzyax.streamlit.app/" target="_blank">Cálculo Banco de Capacitores</a>', unsafe_allow_html=True)
@@ -50,4 +50,3 @@ with col2:
 # Rodapé
 st.write("---")
 st.markdown("<p style='text-align: center; color: gray;'>© 2026 DGCE Manutenção Industrial</p>", unsafe_allow_html=True)
-
