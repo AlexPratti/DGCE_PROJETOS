@@ -3,38 +3,27 @@ import streamlit as st
 # Configurações da página
 st.set_page_config(page_title="DGCE Manutenção Industrial", layout="wide")
 
-# Barra superior com logo à esquerda e título à direita
-col_logo, col_title = st.columns([1, 5])
-with col_logo:
-    st.image(
-        "https://raw.githubusercontent.com/AlexPratti/DGCE_PROJETOS/refs/heads/main/LOGO_ESCURA_DGCE.png",
-        width=80
-    )
-with col_title:
-    st.markdown("<h2 style='text-align: right; color: white;'>DGCE - Manutenção Industrial</h2>", unsafe_allow_html=True)
+# Título com símbolo de raio à esquerda
+st.markdown("<h2 style='text-align: left; color: white;'>⚡ DGCE - Manutenção Industrial</h2>", unsafe_allow_html=True)
 
-# CSS customizado para fundo preto e botões cinza
+# CSS customizado para fundo preto e botões cinza mais próximos
 st.markdown("""
     <style>
-    body {
-        background-color: black;
-        color: white;
-    }
     .stApp {
         background-color: black;
     }
     .app-button {
         display: inline-block;
-        width: 280px;
-        padding: 15px;
-        margin: 10px;
-        font-size: 16px;
+        width: 240px;
+        padding: 12px;
+        margin: 5px;
+        font-size: 15px;
         font-weight: bold;
         text-align: center;
         text-decoration: none;
         background-color: #d3d3d3; /* cinza */
         color: black; /* letras pretas */
-        border-radius: 8px;
+        border-radius: 6px;
         border: none;
         cursor: pointer;
         transition: opacity 0.3s ease;
@@ -47,8 +36,8 @@ st.markdown("""
 
 st.write("Selecione abaixo o aplicativo que deseja acessar:")
 
-# Layout em duas colunas para os botões
-col1, col2 = st.columns(2)
+# Layout em duas colunas mais próximas
+col1, col2 = st.columns([1,1])
 
 with col1:
     st.markdown('<a class="app-button" href="https://c-lculobancocapacitores-tne9epqsrh64gtwaakzyax.streamlit.app/" target="_blank">Cálculo Banco de Capacitores</a>', unsafe_allow_html=True)
@@ -61,3 +50,4 @@ with col2:
 # Rodapé
 st.write("---")
 st.markdown("<p style='text-align: center; color: gray;'>© 2026 DGCE Manutenção Industrial</p>", unsafe_allow_html=True)
+
