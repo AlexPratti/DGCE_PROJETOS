@@ -6,7 +6,7 @@ st.set_page_config(page_title="DGCE Manutenção Industrial", layout="wide")
 # Título com símbolo de raio ⚡ à esquerda
 st.markdown("<h2 style='text-align: left; color: white;'>⚡ DGCE - Manutenção Industrial</h2>", unsafe_allow_html=True)
 
-# CSS customizado para fundo preto e botões cinza mais próximos
+# CSS customizado para fundo preto e botões cinza com borda
 st.markdown("""
     <style>
     .stApp {
@@ -24,7 +24,7 @@ st.markdown("""
         background-color: #d3d3d3; /* cinza */
         color: black; /* letras pretas */
         border-radius: 6px;
-        border: none;
+        border: 1px solid black; /* borda preta fina */
         cursor: pointer;
         transition: opacity 0.3s ease;
     }
@@ -36,7 +36,7 @@ st.markdown("""
 
 st.write("Selecione abaixo o aplicativo que deseja acessar:")
 
-# Layout em duas colunas mais próximas (proporção ajustada)
+# Layout em duas colunas mais próximas
 col1, col2 = st.columns([1,1], gap="small")
 
 with col1:
