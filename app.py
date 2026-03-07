@@ -4,7 +4,7 @@ import streamlit as st
 st.set_page_config(page_title="DGCE Manutenção Industrial", layout="wide")
 
 # Barra superior com logo à esquerda e título à direita
-col_logo, col_title = st.columns([1, 4])
+col_logo, col_title = st.columns([1, 5])
 with col_logo:
     st.image(
         "https://raw.githubusercontent.com/AlexPratti/DGCE_PROJETOS/refs/heads/main/LOGO_ESCURA_DGCE.png",
@@ -13,12 +13,15 @@ with col_logo:
 with col_title:
     st.markdown("<h2 style='text-align: right; color: white;'>DGCE - Manutenção Industrial</h2>", unsafe_allow_html=True)
 
-# CSS customizado para fundo escuro e botões cinza
+# CSS customizado para fundo preto e botões cinza
 st.markdown("""
     <style>
     body {
-        background-color: #121212;
+        background-color: black;
         color: white;
+    }
+    .stApp {
+        background-color: black;
     }
     .app-button {
         display: inline-block;
