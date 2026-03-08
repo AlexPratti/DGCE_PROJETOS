@@ -43,7 +43,7 @@ st.markdown("""
     .footer {
         text-align: left;
         color: gray;
-        margin-top: 40px; /* espaçamento maior para afastar do último botão */
+        margin-top: 60px; /* espaçamento maior para afastar bem do último botão */
     }
     </style>
 """, unsafe_allow_html=True)
