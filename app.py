@@ -13,7 +13,7 @@ st.markdown("""
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        margin-top: 20px;
+        margin-top: 10px;
     }
     .app-button {
         display: inline-block;
@@ -35,13 +35,24 @@ st.markdown("""
         opacity: 0.85;
         transform: scale(1.05); /* leve zoom ao passar o mouse */
     }
+    .subtitle {
+        text-align: center;
+        color: gray;
+        margin-top: 5px;
+    }
+    .footer {
+        text-align: center;
+        color: gray;
+        margin-top: 15px;
+    }
     </style>
 """, unsafe_allow_html=True)
 
 # Título com símbolo ⚡ à esquerda
 st.markdown("<h2 style='text-align: left; color: white;'>⚡ DGCE - Manutenção Industrial</h2>", unsafe_allow_html=True)
 
-st.write("Selecione abaixo o aplicativo que deseja acessar:")
+# Texto de instrução em cinza
+st.markdown("<p class='subtitle'>Selecione abaixo o aplicativo que deseja acessar:</p>", unsafe_allow_html=True)
 
 # Linha única de botões
 st.markdown("<div class='button-row'>", unsafe_allow_html=True)
@@ -53,6 +64,5 @@ st.markdown('<a class="app-button" href="https://sistemael-trico-whsavdbi3zt3jxz
 
 st.markdown("</div>", unsafe_allow_html=True)
 
-# Rodapé
-st.write("---")
-st.markdown("<p style='text-align: center; color: gray;'>© 2026 DGCE Manutenção Industrial</p>", unsafe_allow_html=True)
+# Copyright logo abaixo dos botões
+st.markdown("<p class='footer'>© 2026 DGCE Manutenção Industrial</p>", unsafe_allow_html=True)
