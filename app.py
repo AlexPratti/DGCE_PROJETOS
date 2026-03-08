@@ -3,7 +3,7 @@ import streamlit as st
 # Configurações da página
 st.set_page_config(page_title="DGCE Manutenção Industrial", layout="wide")
 
-# CSS customizado para fundo preto e botões em linha
+# CSS customizado
 st.markdown("""
     <style>
     .stApp {
@@ -12,28 +12,29 @@ st.markdown("""
     .button-row {
         display: flex;
         justify-content: flex-start; /* alinhado à esquerda */
-        flex-wrap: nowrap; /* mantém todos em uma única linha */
+        flex-wrap: nowrap; /* todos em uma linha */
         margin-top: 10px;
+        margin-bottom: 60px; /* espaçamento extra abaixo dos botões */
     }
     .app-button {
         display: inline-block;
         width: 220px;
         padding: 12px;
-        margin-right: 10px; /* espaçamento lateral entre botões */
+        margin-right: 10px;
         font-size: 15px;
         font-weight: bold;
         text-align: center;
         text-decoration: none;
-        background-color: #d3d3d3; /* cinza */
-        color: black; /* letras pretas */
+        background-color: #d3d3d3;
+        color: black;
         border-radius: 6px;
-        border: 1px solid black; /* borda preta fina */
+        border: 1px solid black;
         cursor: pointer;
         transition: transform 0.2s ease, opacity 0.3s ease;
     }
     .app-button:hover {
         opacity: 0.85;
-        transform: scale(1.05); /* leve zoom ao passar o mouse */
+        transform: scale(1.05);
     }
     .subtitle {
         text-align: left;
@@ -43,19 +44,18 @@ st.markdown("""
     .footer {
         text-align: left;
         color: gray;
-        margin-top: 100px; /* espaçamento bem maior para afastar do último botão */
-        padding-bottom: 20px; /* garante respiro extra no final da página */
+        margin-top: 20px; /* espaçamento menor, pois já demos respiro nos botões */
     }
     </style>
 """, unsafe_allow_html=True)
 
-# Título com símbolo ⚡ à esquerda
+# Título
 st.markdown("<h2 style='text-align: left; color: white;'>⚡ DGCE - Manutenção Industrial</h2>", unsafe_allow_html=True)
 
-# Texto de instrução em cinza, alinhado à esquerda
+# Texto de instrução
 st.markdown("<p class='subtitle'>Selecione abaixo o aplicativo que deseja acessar:</p>", unsafe_allow_html=True)
 
-# Linha única de botões, lado a lado
+# Botões em linha com espaçamento extra abaixo
 st.markdown("""
 <div class='button-row'>
     <a class="app-button" href="https://c-lculobancocapacitores-tne9epqsrh64gtwaakzyax.streamlit.app/" target="_blank">Cálculo Banco de Capacitores</a>
@@ -65,5 +65,5 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
-# Copyright em cinza, alinhado à esquerda, com espaçamento maior
+# Rodapé
 st.markdown("<p class='footer'>© 2026 DGCE Manutenção Industrial</p>", unsafe_allow_html=True)
