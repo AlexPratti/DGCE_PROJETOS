@@ -11,7 +11,7 @@ st.markdown("""
     }
     .button-row {
         display: flex;
-        justify-content: center;
+        justify-content: flex-start; /* alinhado à esquerda */
         flex-wrap: wrap;
         margin-top: 10px;
     }
@@ -36,12 +36,12 @@ st.markdown("""
         transform: scale(1.05); /* leve zoom ao passar o mouse */
     }
     .subtitle {
-        text-align: center;
+        text-align: left;
         color: gray;
         margin-top: 5px;
     }
     .footer {
-        text-align: center;
+        text-align: left;
         color: gray;
         margin-top: 15px;
     }
@@ -51,10 +51,10 @@ st.markdown("""
 # Título com símbolo ⚡ à esquerda
 st.markdown("<h2 style='text-align: left; color: white;'>⚡ DGCE - Manutenção Industrial</h2>", unsafe_allow_html=True)
 
-# Texto de instrução em cinza
+# Texto de instrução em cinza, alinhado à esquerda
 st.markdown("<p class='subtitle'>Selecione abaixo o aplicativo que deseja acessar:</p>", unsafe_allow_html=True)
 
-# Linha única de botões
+# Linha única de botões, alinhados à esquerda
 st.markdown("<div class='button-row'>", unsafe_allow_html=True)
 
 st.markdown('<a class="app-button" href="https://c-lculobancocapacitores-tne9epqsrh64gtwaakzyax.streamlit.app/" target="_blank">Cálculo Banco de Capacitores</a>', unsafe_allow_html=True)
@@ -64,5 +64,5 @@ st.markdown('<a class="app-button" href="https://sistemael-trico-whsavdbi3zt3jxz
 
 st.markdown("</div>", unsafe_allow_html=True)
 
-# Copyright logo abaixo dos botões
+# Copyright em cinza, alinhado à esquerda
 st.markdown("<p class='footer'>© 2026 DGCE Manutenção Industrial</p>", unsafe_allow_html=True)
