@@ -3,20 +3,24 @@ import streamlit as st
 # Configurações da página
 st.set_page_config(page_title="DGCE Manutenção Industrial", layout="wide")
 
-# Título com símbolo de raio ⚡ à esquerda
-st.markdown("<h2 style='text-align: left; color: white;'>⚡ DGCE - Manutenção Industrial</h2>", unsafe_allow_html=True)
-
-# CSS customizado para fundo preto e botões cinza com borda preta fina
+# CSS customizado para fundo preto e centralização
 st.markdown("""
     <style>
     .stApp {
         background-color: black;
     }
+    .centered {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 80vh; /* ocupa quase toda a tela */
+    }
     .app-button {
         display: inline-block;
-        width: 220px;
+        width: 240px;
         padding: 12px;
-        margin: 5px; /* espaçamento reduzido */
+        margin: 8px;
         font-size: 15px;
         font-weight: bold;
         text-align: center;
@@ -34,9 +38,15 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
+# Título com símbolo ⚡ à esquerda
+st.markdown("<h2 style='text-align: left; color: white;'>⚡ DGCE - Manutenção Industrial</h2>", unsafe_allow_html=True)
+
+# Container centralizado
+st.markdown("<div class='centered'>", unsafe_allow_html=True)
+
 st.write("Selecione abaixo o aplicativo que deseja acessar:")
 
-# Layout em duas colunas bem próximas
+# Botões em duas colunas centralizadas
 col1, col2 = st.columns([1,1], gap="small")
 
 with col1:
@@ -46,6 +56,8 @@ with col1:
 with col2:
     st.markdown('<a class="app-button" href="https://short-circuit-calc-e5u5dmgap2uqfdtbkc3d4e.streamlit.app/" target="_blank">Cálculo de Curto-Circuito</a>', unsafe_allow_html=True)
     st.markdown('<a class="app-button" href="https://sistemael-trico-whsavdbi3zt3jxzmegbhfr.streamlit.app/" target="_blank">Sistema Elétrico</a>', unsafe_allow_html=True)
+
+st.markdown("</div>", unsafe_allow_html=True)
 
 # Rodapé
 st.write("---")
