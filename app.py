@@ -43,7 +43,7 @@ st.markdown("""
     .footer {
         text-align: left;
         color: gray;
-        margin-top: 15px;
+        margin-top: 40px; /* espaçamento maior para afastar do último botão */
     }
     </style>
 """, unsafe_allow_html=True)
@@ -64,5 +64,5 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
-# Copyright em cinza, alinhado à esquerda
+# Copyright em cinza, alinhado à esquerda, com espaçamento maior
 st.markdown("<p class='footer'>© 2026 DGCE Manutenção Industrial</p>", unsafe_allow_html=True)
