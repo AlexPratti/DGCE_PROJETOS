@@ -19,7 +19,7 @@ st.markdown("""
         display: inline-block;
         width: 220px;
         padding: 12px;
-        margin: 5px;
+        margin-right: 10px; /* espaçamento lateral entre botões */
         font-size: 15px;
         font-weight: bold;
         text-align: center;
@@ -55,14 +55,14 @@ st.markdown("<h2 style='text-align: left; color: white;'>⚡ DGCE - Manutenção
 st.markdown("<p class='subtitle'>Selecione abaixo o aplicativo que deseja acessar:</p>", unsafe_allow_html=True)
 
 # Linha única de botões, lado a lado
-st.markdown("<div class='button-row'>", unsafe_allow_html=True)
-
-st.markdown('<a class="app-button" href="https://c-lculobancocapacitores-tne9epqsrh64gtwaakzyax.streamlit.app/" target="_blank">Cálculo Banco de Capacitores</a>', unsafe_allow_html=True)
-st.markdown('<a class="app-button" href="https://short-circuit-calc-e5u5dmgap2uqfdtbkc3d4e.streamlit.app/" target="_blank">Cálculo de Curto-Circuito</a>', unsafe_allow_html=True)
-st.markdown('<a class="app-button" href="https://calculo-arc-flash-hb8eujmejx23kk2skfn9nr.streamlit.app/" target="_blank">Cálculo Arc Flash</a>', unsafe_allow_html=True)
-st.markdown('<a class="app-button" href="https://sistemael-trico-whsavdbi3zt3jxzmegbhfr.streamlit.app/" target="_blank">Sistema Elétrico</a>', unsafe_allow_html=True)
-
-st.markdown("</div>", unsafe_allow_html=True)
+st.markdown("""
+<div class='button-row'>
+    <a class="app-button" href="https://c-lculobancocapacitores-tne9epqsrh64gtwaakzyax.streamlit.app/" target="_blank">Cálculo Banco de Capacitores</a>
+    <a class="app-button" href="https://short-circuit-calc-e5u5dmgap2uqfdtbkc3d4e.streamlit.app/" target="_blank">Cálculo de Curto-Circuito</a>
+    <a class="app-button" href="https://calculo-arc-flash-hb8eujmejx23kk2skfn9nr.streamlit.app/" target="_blank">Cálculo Arc Flash</a>
+    <a class="app-button" href="https://sistemael-trico-whsavdbi3zt3jxzmegbhfr.streamlit.app/" target="_blank">Sistema Elétrico</a>
+</div>
+""", unsafe_allow_html=True)
 
 # Copyright em cinza, alinhado à esquerda
 st.markdown("<p class='footer'>© 2026 DGCE Manutenção Industrial</p>", unsafe_allow_html=True)
