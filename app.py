@@ -12,7 +12,7 @@ st.markdown("""
     .button-row {
         display: flex;
         justify-content: flex-start; /* alinhado à esquerda */
-        flex-wrap: wrap;
+        flex-wrap: nowrap; /* mantém todos em uma única linha */
         margin-top: 10px;
     }
     .app-button {
@@ -54,7 +54,7 @@ st.markdown("<h2 style='text-align: left; color: white;'>⚡ DGCE - Manutenção
 # Texto de instrução em cinza, alinhado à esquerda
 st.markdown("<p class='subtitle'>Selecione abaixo o aplicativo que deseja acessar:</p>", unsafe_allow_html=True)
 
-# Linha única de botões, alinhados à esquerda
+# Linha única de botões, lado a lado
 st.markdown("<div class='button-row'>", unsafe_allow_html=True)
 
 st.markdown('<a class="app-button" href="https://c-lculobancocapacitores-tne9epqsrh64gtwaakzyax.streamlit.app/" target="_blank">Cálculo Banco de Capacitores</a>', unsafe_allow_html=True)
