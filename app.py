@@ -60,7 +60,7 @@ st.markdown("""
 <div class='button-row'>
     <a class="app-button" href="https://c-lculobancocapacitores-tne9epqsrh64gtwaakzyax.streamlit.app/" target="_blank">Cálculo Banco de Capacitores</a>
     <a class="app-button" href="https://short-circuit-calc-e5u5dmgap2uqfdtbkc3d4e.streamlit.app/" target="_blank">Cálculo de Curto-Circuito</a>
-    <a class="app-button" href="https://calculo-arc-flash-hb8eujmejx23kk2skfn9nr.streamlit.app/" target="_blank">Cálculo Arc Flash</a>
+    <a class="app-button" href="https://calculadoraenergiaincidente-yqufhgaxaqr5uedwzbca93.streamlit.app/" target="_blank">Cálculo Arc Flash</a>
     <a class="app-button" href="https://sistemael-trico-whsavdbi3zt3jxzmegbhfr.streamlit.app/" target="_blank">Sistema Elétrico</a>
 </div>
 """, unsafe_allow_html=True)
